@@ -1,0 +1,125 @@
+
+/*======== All Element ========*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: "New Amsterdam",sans-serif;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*======== Google Fonts ((New Amsterdam) ) ========*/
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=New+Amsterdam&display=swap');
+
+/*======== Navigation Bar ========*/
+header {
+    padding: 20px 40px;
+    background-image: url('../image/Image04\ .jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100vw;
+    border-radius: 10px;
+}
+
+nav {
+    background-color: rgba(165, 42, 42, 0.918);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    border: 2px solid rgba(165, 42, 42, 0.918);
+    box-shadow: 20px 20px 10px black;
+    padding: 10px 20px;
+}
+
+.first {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    img:hover {
+        height: 82px;
+        width: 142px;
+    }
+    h1{
+        font-size: 30px;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        line-height: 2;
+    }
+    h1:hover {
+        font-size: 32px;
+        color: goldenrod;
+    }
+}
+
+
+.second {
+    display: flex;
+    flex-grow: 2;
+    justify-content: end;
+    padding-right: 20px;
+    ul {
+        display: flex;
+        li {
+            padding: 2px 10px;
+            font-size: 20px;
+            a:hover {
+                color: goldenrod;
+            }
+        }
+    }
+}
+
+.third {
+    display: flex;
+    flex-grow: 1;
+    input {
+        font-size: 15px;
+        font-weight: bold;
+        padding: 10px 10px;
+        width: 200px;
+        border-radius: 50% 0px 0px 50%;
+        font-family: 'Times New Roman', Times, serif;
+        border: 5px solid rgb(254, 194, 8);
+    }
+    input:focus {
+        outline: none;
+    } 
+    .SButton {
+        border-radius: 0px 50% 50% 0px;
+        border: 5px solid rgb(254, 194, 8);
+        padding: 10px 10px;
+        text-align: center;
+        background-color: black;
+    }
+    .signIn {
+        margin-left: 20px;
+        font-size: 28px;
+        padding: 0px 10px;
+        border-radius: 50px;
+        border: none;
+        font-weight: bold;
+        font-family: "New Amsterdam",sans-serif;
+        background-color: rgb(185, 100, 9);
+        color: black;
+    }
+    .signIn:hover {
+        font-size: 30px;
+        background-color: black;
+        color: rgb(185, 100, 9);
+    }
+}
+
