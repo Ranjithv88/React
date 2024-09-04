@@ -1,13 +1,13 @@
 import React from 'react';
 import Navbar from './components/navbar/navbar';
-import Gallery from './components/content/imageGallery';
+import ContentOfWeb from './components/content/contentPage';
 import Foot from './components/footer/footer';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Gallery />
+      <ContentOfWeb />
       <Foot />
     </div>
   );

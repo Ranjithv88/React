@@ -11,15 +11,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=New+Amsterdam&display=swap');
 
 /*========== Footer ==========*/
+footer {
+    background-color: rgb(0, 0, 0);
+    padding-top: 18px;
+}
+
 /*===== Upper =====*/
 .upperFooter {
     height: 300px;
-    width: 100%;
     padding: 50px;
     display: flex;
     justify-content: space-around;
+    background-image: url('../image/Footer\ Background\ \ Image\ .jpg');
+    background-position: center center;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    margin: 20px 50px 2px 50px;
+    border-radius: 20px 20px 20px 20px;
+    overflow: hidden;
 }
-
+ 
 .upperFooter  div:first-child {
     display: flex;
     flex-direction: column;
@@ -28,6 +39,7 @@
 }
 
 .upperFooter  div:first-child h1 {
+    color: rgb(245, 245, 245);
     font-size: 80px;
     font-style: normal;
     font-weight: 400;

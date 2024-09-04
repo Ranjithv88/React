@@ -5,7 +5,7 @@ function Foot() {
     return (
         <div className="BottomOfWeb">
             {/*======== Icon Bootstrap Link ========*/}
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"></link>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
             {/*======== Footer On WebSites ========*/}
             <footer>
                 <div class="upperFooter" >
