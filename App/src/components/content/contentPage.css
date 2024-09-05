@@ -1,14 +1,127 @@
 
+/*======== Google Font (Karantina,Poppins) ========*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /*======== All Element ========*/
 * {
-    margin: 0;
-    box-sizing: border-box;
     padding: 0;
+    margin: 0;
 }
 
-/*======== Content ========*/
-.Outer {
+.content {
+    min-height: 100vh;
+    margin: 5px 20px 5px 20px;
+    border-radius: 20px 20px 20px 20px;
+    overflow: hidden;
+    font-family: Poppins;
+    color: #1E1E1E;
+    background-color: #CDCDCD;
+    background-image:
+    repeating-linear-gradient(
+        to right, transparent 0 150px, #0001 150px 151px
+    ),
+    repeating-linear-gradient(
+        to bottom, transparent 0 150px, #0001 150px 151px
+    ),
+    linear-gradient(to right, #CDCDCDcc, #CDCDCDcc),
+    url(images/bg.jpg);
+}
+
+/*======== Body ========*/
+.banner {
     height: 100vh;
-    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner .product {
+    /* background-color: red; */
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    bottom: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    transition: 0.7s;
+    --left: 0px;
+    display: flex;
+}
+
+.banner .product .soda {
+    background: 
+        var(--url) var(--left) 0,
+        url('./images/mockup.png');
+    background-size: auto 100%;
+    width: 288px;
+    /* height: 500px; */
+    aspect-ratio: 2 / 4;
+    background-blend-mode: multiply;
+    mask-image: url('./images/mockup.png');
+    mask-size: auto 100%;
+    transition: 0.7s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.banner .product:hover {
+    --left: 1180px;
+    transform: translateX(-50%) translateY(-120px);
+}
+
+.banner .rock {
+    position: absolute;
+    inset: 0 0 0 0;
+    pointer-events: none;
+}
+
+.banner .rock img {
+    position: absolute;
+    transition: 0.7s;
+}
+
+.banner .rock img:nth-child(1) {
+    height: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+}
+
+.banner:has(.product:hover) .rock img:nth-child(1) {
+    transform: translateX(-50%) translateY(50px);
+}
+
+.rock img:nth-child(2) {
+    position: absolute;
+    height: 50%;
+    left: 0;
+    bottom: 0;
+    transition: 0.7s;
+}
+
+.banner:has(.product:hover) .rock img:nth-child(2) {
+    transform: translateX(-100px) translateY(100px);
+}
+
+.rock img:nth-child(3) {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    bottom: -100px;
+    rotate: -25deg;
+    transition: 0.7s;
+}
+
+.banner:has(.product:hover) .rock img:nth-child(3) {
+    transform: translateX(100px) translateY(100px);
+}
+
+.banner .product .soda:nth-child(2) {
+    opacity: 0;
+}
+
+.banner .product:hover .soda:nth-child(2) {
+    opacity: 1;
 }
 

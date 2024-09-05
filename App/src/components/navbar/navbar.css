@@ -43,6 +43,7 @@ nav {
     border: 2px solid rgba(165, 42, 42, 0.918);
     box-shadow: 20px 20px 10px black;
     padding: 10px 20px;
+    flex-wrap: wrap;
 }
 
 .first {
