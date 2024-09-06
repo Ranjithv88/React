@@ -1,0 +1,83 @@
+
+/*======== All Element ========*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    li {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+/*======== Navigation Bar ========*/
+nav {
+   background-color: rgb(200, 230, 144);
+   padding: 20px 30px 40px 30px;
+    div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 96vw;
+        height: 100px;
+        background-color: rgb(35, 90, 50);
+        border-radius: 25px;
+        box-shadow: 15px 25px 15px rgb(0, 0, 0);
+        border: 5px solid rgb(35, 90, 50); 
+        .oneUl {
+            display: flex;
+            li {
+                color: rgb(245, 245, 245);
+                font-size: 50px;
+            }
+            a {
+                padding-left: 15px;
+                color: rgb(245, 245, 245);
+                font-size: 30px;
+            }
+        }
+        .twoUl {
+            display: flex;
+            a {
+                padding-left: 15px;
+                color: rgb(245, 245, 245);
+                font-size: 20px;
+            }
+        }
+        .threeUl {
+            display: flex;
+            .li01 {
+                padding: 5px;
+                background-color: white;
+                border-radius: 20px 20px 20px 20px;
+                input{
+                    width: 200px;
+                    height: 30px;
+                    padding: 10px;
+                    font-size: 15px;
+                    border: none;
+                }
+                input:focus {
+                    outline: none;
+                }
+                button {
+                    width: 40px;
+                    height: 30px;
+                    background-color: rgb(255, 255, 255);
+                    color: rgb(8, 48, 34);
+                    border-radius: 50%;
+                    border: none;
+                    font-size: 20px;
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+}
+
