@@ -19,9 +19,11 @@ function NavBar () {
                             <li><a href="#"><i class="bi bi-info-circle"/> Help </a></li>
                         </ul>
                         <ul className="threeUl">
-                            <li className="li01"><input type="text" placeholder="Search......."/><button value="button"><i class="bi bi-search"/></button></li> 
-                            <li><button value="button"> Log In </button></li> 
-                            <li><button value="button"> Sign Up </button></li> 
+                            <li ><input type="text" placeholder="Search......."/><button className="btn01" value="button"><i class="bi bi-search"/></button></li> 
+                        </ul>
+                        <ul className="fourUl">
+                            <li className="btnli" ><button value="button"> Log In </button></li> 
+                            <li className="btnli" ><button value="button"> Sign Up </button></li> 
                         </ul>
                     </div>
                 </nav>

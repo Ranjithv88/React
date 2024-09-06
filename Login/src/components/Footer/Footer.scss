@@ -1,2 +1,25 @@
 
+/*======== All Element ========*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/*======== Footer ========*/
+footer {
+    background-image: url('../image/backgroundFooter.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .divfooter {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        h1 {
+            font-size: 50px;
+            font-weight: bold;
+        }
+    }
+}
+
+
 
