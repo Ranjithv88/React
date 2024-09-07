@@ -4,13 +4,13 @@ function Footer () {
     return (
         <div className='footer'>
            <footer>
-                <div className='divFooter'>
+                <div className='divFooter'> 
                     <h1> The agency for impatient brands@  </h1>
                     <ul>
                     <h1> Follow Us </h1>
                         <ul>
-                            <li><a href='#' target="black" alt='email'><i class="bi bi-envelope FIcon01 "/></a></li>
-                            <li><a href='#' target="black" alt='instagram'><i class="bi bi-instagram FIcon02 "/></a></li>
+                            <li><a href='#' target="black" alt='Email'><i class="bi bi-envelope-fill FIcon01 "/></a></li>
+                            <li><a href='#' target="black" alt='Instagram'><i class="bi bi-instagram FIcon02 "/></a></li>
                             <li><a href='#' target="black" alt='LinkedIn'><i class="bi bi-linkedin FIcon03 "/></a></li>
                             <li><a href='https://github.com/Ranjithv88/websites' target="black" alt='GitHub'><i class="bi bi-github FIcon04 "/></a></li>
                         </ul>   
