@@ -7,8 +7,24 @@
 }
 
 /*======== Main Content ========*/
-.main {
-    background-image: url('../../image/background.jpg');
+.main01 {
+    background-image: url('../../image/background01.jpg');
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.main02 {
+    background-image: url('../../image/background02.jpg');
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.main03 {
+    background-image: url('../../image/background03.jpg');
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;

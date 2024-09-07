@@ -1,4 +1,8 @@
 
+/*======== Google fonts (Matemasie,Bebas Neue) ========*/
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
+
 /*======== All Element ========*/
 * {
     margin: 0;
@@ -8,16 +12,108 @@
 
 /*======== Footer ========*/
 footer {
-    background-image: url('../image/backgroundFooter.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    .divfooter {
+    .divFooter {
+        height: 440px;
+        width: 100vw;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        z-index: 1;
         h1 {
+            display: grid;
+            width: 400px;
             font-size: 50px;
             font-weight: bold;
+            justify-content: center;
+            align-content: center;
+            padding: 20px;
+            font-family: "Matemasie", sans-serif;
+            color: rgb(255, 255, 255);
+            width: 800px;
         }
+        ul {
+            padding: 10px 28px;
+            display: grid;
+            justify-content: end;
+            align-content: center;
+            h1 {
+                font-family: 'Bebas Neue',sans-serif;
+                padding: 0px;
+                font-weight: 800;
+                text-align: end;
+                width: 200px;
+                font-size: 50px;
+            }
+            ul {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                justify-content: end;
+                background-color: rgb(255, 255, 255);
+                border-radius: 20px;
+                a {
+                    font-size: 35px;
+                    padding: 2px 8px;
+                    .FIcon01 {
+                        color: rgb(253, 214, 0);
+                    }
+                    .FIcon02 {
+                        color: rgb(172, 46, 140);
+                    }
+                    .FIcon03 {
+                        color: rgb(32, 117, 146);
+                    }
+                    .FIcon04 {
+                        color: rgb(0, 0, 0);
+                    }
+                }
+                a:hover {
+                    border-radius: 50%;
+                    font-size: 42px;
+                    color: rgb(255, 255, 255);
+                    .FIcon01 {
+                        color: rgb(253, 214, 0);
+                    }
+                    .FIcon02 {
+                        color: rgb(172, 46, 140);
+                    }
+                    .FIcon03 {
+                        color: rgb(32, 117, 146);
+                    }
+                    .FIcon04 {
+                        color: rgb(0, 0, 0);
+                    }
+                }
+            }
+        }
+        p {
+            display: grid;
+            grid-column: span 2;
+            padding: 0px 25px;
+            text-align: justify;
+            font-weight: 200;
+            font-style: italic;
+            font-variant: small-caps;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: rgb(255, 255, 255);
+        }
+    }
+    .divFooter::before {
+        content: "";
+        background-image: url('../image/background01Footer.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: blur(10px);
+        position: absolute;
+        height: 400px;
+        width: 98vw;
+        top: calc(100vh + 20px);
+        border-radius: 25px;
+        left: 10px;
+        right: 10px;
+        bottom: 0;
+        z-index: -1;
     }
 }
 
