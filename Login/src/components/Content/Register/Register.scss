@@ -1,0 +1,142 @@
+
+/*======== Google fonts (Bebas Neue) ========*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
+
+/*======== All Element ========*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/*======== variables ========*/
+:root {
+    --h5-Font: 4vh;
+    --label-Font: 4vh;
+    --input-Font: 3vh;
+}
+
+/*======== Register Page ========*/
+.register {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    form {
+        height: fit-content;
+        width: 50vw;
+        display: grid;
+        grid-template-columns: 1fr 0.5fr 2fr;
+        row-gap: 10px;
+        background-color: rgb(236, 240, 243);
+        box-shadow: inset 4px 4px 3px rgb(255, 255, 255),
+            20px 20px 18px rgba(0,0,0,.16);
+        font-family: 'Bebas Neue',sans-serif;
+        padding: 40px 40px;
+        letter-spacing: 1px;
+
+        h1 {
+            grid-column: span 3;
+            font-size: 5vh;
+            font-weight: bolder;
+            button {
+                height: 8vh;
+                width: 8vh;
+                font-size: 5.5vh;
+                font-weight: bolder;
+                cursor: pointer;
+                background-color: rgb(255, 255, 255);
+                border-radius: 50%;
+                box-shadow: inset 2px 2px 1px rgb(255, 255, 255),
+                20px 20px 18px rgba(0,0,0,.16);
+                border: none;
+                margin: 0px 10px;
+                text-align: center;
+                }
+                button:hover {
+                    color: rgb(255, 0, 0);
+                }
+        }
+
+        h5 {
+            font-size: var(--h5-Font);
+            text-align: center;
+        }
+
+        label {
+            font-size: var(--label-Font);
+            font-weight: 600;
+        }
+
+        .CGender {
+            grid-column: span 3;
+            display: grid;
+            grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+            font-size: var(--label-Font);
+            input {
+                border: none;
+                font-size: var(--input-Font);
+                font-weight: 500;
+                font-family: 'Bebas Neue',sans-serif;
+                height: 5.5vh;
+                width: 5.5vh;
+                cursor: pointer;
+            }
+        }
+
+        input {
+            border-radius: 20px;
+            border: none;
+            font-size: var(--input-Font);
+            font-weight: 500;
+            padding: 10px 10px;
+            font-family: 'Bebas Neue',sans-serif;
+        }
+        input:focus {
+            outline: none;
+        }
+
+        .registerBtn {
+            grid-column: span 3;
+            font-size: 5vh;
+            font-weight: bolder;
+            background-color: rgb(236, 240, 243);
+            box-shadow: inset 4px 4px 3px rgb(255, 255, 255),
+                    20px 20px 18px rgba(0,0,0,.16);
+            border: none;
+            border-radius: 25px;
+            height: 8vh;
+            font-family: 'Bebas Neue',sans-serif;
+            font-weight: bold;
+        }
+
+        .registerBtn:hover {
+            background-color: rgba(0, 128, 0, 0.829);
+            box-shadow: 20px 20px 18px rgba(0,0,0,.16);
+            color: white;
+
+        }
+
+    }
+
+}
+
+/*======== media query ========*/
+@media only screen and (max-width: 626px) {
+    
+    .register{
+        form {
+            height: 98vh;
+            width: 98vw;
+        }
+    }
+
+}
+

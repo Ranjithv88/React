@@ -1,0 +1,106 @@
+
+/*======== Google fonts (Bebas Neue) ========*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
+
+/*======== All Element ========*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/*======== Login Page ========*/
+.loginInner {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form {
+        background-color: rgb(236, 240, 243);
+        border-radius: 20px;
+        height:70vh;
+        width: 30vw;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 40px;
+        row-gap: 10px;
+        box-shadow: inset 2px 2px 1px rgb(255, 255, 255),
+        20px 20px 18px rgba(0,0,0,.16);
+        border: none;
+        font-family: 'Bebas Neue',sans-serif;
+        h1 {
+            font-size: 10vh;
+            display: flex;
+            align-items: center;
+            button {
+            height: 8vh;
+            width: 8vh;
+            font-size: 6vh;
+            font-weight: bolder;
+            cursor: pointer;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            box-shadow: inset 2px 2px 1px rgb(255, 255, 255),
+            20px 20px 18px rgba(0,0,0,.16);
+            border: none;
+            margin: 0px 10px;
+            text-align: center;
+            }
+            button:hover {
+                font-size: 6vh;
+                color: rgb(255, 0, 0);
+            }
+        }
+        input {
+            font-weight: 500;
+            border-radius: 40px;
+            padding: 10px 10px;
+            height: 8vh;
+            width: 22vw;
+            border: none;
+            box-shadow: inset 2px 2px 1px rgb(255, 255, 255),
+            20px 20px 18px rgba(0,0,0,.16);
+            font-size: 4vh;
+            text-align: start;
+        }
+        input:focus {
+            outline: none;
+        }
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 8vh;
+            width: 22vw;
+            font-size: 5vh;
+            cursor: pointer;
+            background-color: rgb(255, 255, 255);
+            border-radius: 20px;
+            box-shadow: inset 2px 2px 1px rgb(255, 255, 255),
+            20px 20px 18px rgba(0,0,0,.16);
+            border: none;
+            font-weight: bold;
+            align-items: center;
+            .loginBtn  {
+                display: none;
+                font-size: 5vh;
+                color: rgb(0, 128, 0);
+                height: 7vh;
+                width: 7vh;
+                background-color: rgb(236, 240, 243);
+                margin: 0px 20px;
+                border-radius: 50%;
+                padding: 1vh 1vh;
+            }
+        }
+        button:hover {
+            font-size: 6vh;
+            .loginBtn {
+                display: inherit;
+            }
+        }
+    }
+}
+
