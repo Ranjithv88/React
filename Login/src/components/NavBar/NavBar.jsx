@@ -3,6 +3,7 @@ import { IoShirtSharp } from "react-icons/io5";
 import { PiPantsBold } from "react-icons/pi";
 import { PiHoodieBold } from "react-icons/pi";
 import { CiCircleMore } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 function NavBar () {
     return (
@@ -14,7 +15,7 @@ function NavBar () {
                     <div>
                         <ul className="oneUl">
                             <li><i class="bi bi-bag-fill"/></li>
-                            <li><a href="../../../public/index.html"> Online Shop </a></li>
+                            <li><Link to={"/"}><a href="#"> Online Shop </a></Link></li>
                         </ul>
                         <ul className="twoUl">
                             <li><a href="#"><i class="bi bi-house-fill"/> Home </a></li>
@@ -38,8 +39,8 @@ function NavBar () {
                             <li ><input type="text" placeholder="Search......."/><button className="btn01" value="button"><i class="bi bi-search"/></button></li> 
                         </ul>
                         <ul className="fiveUl">
-                            <li className="btnli" ><button value="button"> Log In </button></li> 
-                            <li className="btnli" ><button value="button"> Sign Up </button></li> 
+                            <li className="btnli" ><Link to={"/LogIn"}><button value="button"> Log In </button></Link></li> 
+                            <li className="btnli" ><Link to={"/SignIn"}><button value="button"> Sign Up </button></Link></li> 
                         </ul>
                     </div>
                 </nav>

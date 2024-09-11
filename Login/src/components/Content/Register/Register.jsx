@@ -1,10 +1,11 @@
 import './Register.scss';
+import { Link } from 'react-router-dom';
 
 function Register () {
     return(
         <div className="register">
             <form className="registerForm" action='#' method='post'>
-            <h1><button><i class="bi bi-arrow-left" /></button> Register</h1>
+            <h1><Link to={"/"}><button><i class="bi bi-arrow-left" /></button></Link> Register </h1>
                 <label for="name">Name</label><h5>:</h5>
                 <input type="text" id='name'/>
                 <label for="age">Age</label><h5>:</h5>
