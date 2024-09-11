@@ -21,6 +21,9 @@
     }
 }
 
+/*======== Variables ========*/
+$border-radius-in: 50%;
+
 /*======== Navigation Bar ========*/
 nav {
    background-color: transparent;
@@ -70,15 +73,43 @@ nav {
             flex: 2;
             justify-content: center;
             align-items: center;
-            .products:hover {
+            .products {
+                .dropDownIcon01 {
+                    font-size: 20px;
+                    transition-duration: 2s;
+                    // visibility: hidden;
+                }
+                .dropDownIcon02 {
+                    font-size: 0px;
+                    transition-duration: 2s;
+                    // visibility: hidden;
+                }
                 .dropDown {
-                    height: 170px;
-                    width: 180px;
+                    visibility: hidden;
+                    position: absolute;
+                    inset: 100px 0 0 28%;
+                    padding-top: 10px;
+                    box-shadow: 10px 20px 10px rgba(0, 0, 0, 1);
+                    z-index: 2;
+                    border: 5px solid rgba(111, 174, 81, 1);
+                }
+            }
+            .products:hover {
+                .dropDownIcon01 {
+                    font-size: 0px;
+                    // visibility: hidden;
+                }
+                .dropDownIcon02 {
+                    font-size: 28px;
+                    // visibility: hidden;
+                }
+                .dropDown {
+                    height: 180px;
+                    width: 190px;
                     display: flexbox;
                     background-color: rgb(35, 90, 50);
-                    position: absolute;
-                    inset: 110px 0 0 28%;
                     border-radius: 25px;
+                    visibility: visible;
                     li{
                         display: flex;
                         justify-content: center;
@@ -95,7 +126,6 @@ nav {
                         a {
                             color: rgb(253, 214, 0);
                             font-size: 28px;
-                            padding: 0px 0px;
                         }
                     }
                 }
@@ -132,6 +162,7 @@ nav {
             button:hover {
                 height: 45px;
                 width: 45px;
+                transition: background-color 1s ease-in-out;
                 background-color: rgb(255, 255, 255);
                 border: 4px solid rgb(253, 214, 0);
             }
@@ -151,14 +182,20 @@ nav {
             display: flex;
             flex: 1;
             justify-content: end;
-            padding-right: 20px;
+            align-items: center;
             li {
                 display: flex;
                 padding: 10px;
-                border-radius: 20px;
+                border-radius: $border-radius-in;
                 background-color: rgb(255, 255, 255);
                 flex-wrap: nowrap;
+                overflow: hidden;
+                input:focus {
+                    display: inherit;
+                    outline: none;
+                }
                 input {
+                    display: none;
                     color: rgb(0, 0, 0);
                     background-color: rgb(255, 255, 255);
                     font-size: 18px;
@@ -170,9 +207,6 @@ nav {
                     align-items: center;
                     font-family: Oswald,sans-serif;
                 }
-                input:focus {
-                    outline: none;
-                }
                 button {
                     font-size: 20px;
                     background-color: white;
@@ -183,10 +217,17 @@ nav {
                     width: 30px;
                 }
                 button:hover {
-                    font-size: 20px;
-                    background-color: rgb(253, 214, 0);
-                    color: white;
-
+                    font-size: 28px;
+                }
+            }
+            li:hover {
+                border-radius: 20px;
+                transition-duration: 1.5s;
+                input {
+                    display: inherit;
+                }
+                input:focus {
+                    outline: none;
                 }
             }
         }

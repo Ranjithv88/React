@@ -4,6 +4,7 @@ import { PiPantsBold } from "react-icons/pi";
 import { PiHoodieBold } from "react-icons/pi";
 import { CiCircleMore } from "react-icons/ci";
 import { Link } from "react-router-dom";
+import Btn from '../../App';
 
 function NavBar () {
     return (
@@ -19,7 +20,7 @@ function NavBar () {
                         </ul>
                         <ul className="twoUl">
                             <li><a href="#"><i class="bi bi-house-fill"/> Home </a></li>
-                            <li><a href="#" className='products'><i class="bi bi-box"/> Products 
+                            <li><a href="#" className='products'><i class="bi bi-box"/> Products <i class="bi bi-caret-up-fill dropDownIcon01" /> <i class="bi bi-caret-down-fill dropDownIcon02" /> 
                                 <ul className='dropDown'>
                                     <li><a href="#"> <PiHoodieBold /> T-Shirts </a></li>
                                     <li><a href="#"> <IoShirtSharp /> Shirts </a></li>
@@ -31,9 +32,9 @@ function NavBar () {
                             <li><a href="#"><i class="bi bi-info-circle"/> Help </a></li>
                         </ul>
                         <ul className="threeUl">
-                            <button className="circle01"></button >
-                            <button className="circle02"></button >
-                            <button className="circle03"></button >
+                            <button className="circle01"onClick={Btn(2)}></button >
+                            <Link to={"/b&w"}><button className="circle02"></button ></Link>
+                            <Link to={"/Rainbow"}><button className="circle03"></button ></Link>
                         </ul>
                         <ul className="fourUl">
                             <li ><input type="text" placeholder="Search......."/><button className="btn01" value="button"><i class="bi bi-search"/></button></li> 
