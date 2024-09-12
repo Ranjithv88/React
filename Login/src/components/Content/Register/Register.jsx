@@ -9,7 +9,7 @@ function Register () {
                 <label for="name">Name</label><h5>:</h5>
                 <input type="text" id='name'/>
                 <label for="age">Age</label><h5>:</h5>
-                <input type="number" id='age'/>
+                <input type="range" min='1' max='100' id='age'/>
                 <label  className='CGender' for='gender'>Gender
                     <input id='gender' type="radio" name='gender' value='male'/>Male
                     <input id='gender' type="radio" name='gender' value='female'/>Female
