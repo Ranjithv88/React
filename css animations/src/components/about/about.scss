@@ -1,0 +1,64 @@
+.about {
+  .fade-in {
+    opacity: 0;
+    animation: fade-in 4s ease-out forwards;
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  //   .slide-in {
+  //     transform: translateX(-100%);
+  //     animation: slide-in 1s ease-out forwards;
+  //   }
+
+  //   @keyframes slide-in {
+  //     0% {
+  //       transform: translateX(-100%);
+  //     }
+  //     100% {
+  //       transform: translateX(0);
+  //     }
+  //   }
+
+  .slide-in {
+    position: absolute;
+    left: -100%;
+    animation: slide-in 1s ease-out forwards;
+  }
+
+  @keyframes slide-in {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 0%;
+    }
+  }
+  .move {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: move 2s ease-out forwards;
+  }
+
+  @keyframes move {
+    0% {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    100% {
+      top: 0%;
+      left: 0%;
+      transform: translate(0%, 0%);
+    }
+  }
+}

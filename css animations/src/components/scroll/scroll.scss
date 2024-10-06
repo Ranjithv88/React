@@ -1,0 +1,81 @@
+// .scroll {
+//   height: 100vh;
+//   background-color: rgb(151, 151, 151);
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   .logo {
+//     h2 {
+//       margin: 0;
+//       // opacity: 0;
+//       font-size: 2em;
+//       animation: logo 1s ease-out;
+//       animation-iteration-count: infinite;
+//     }
+//     @keyframes logo {
+//       0% {
+//         opacity: 0.5;
+//         font-size: 2em;
+//       }
+//       50% {
+//         opacity: 1;
+//         font-size: 4em;
+//       }
+//       100% {
+//         opacity: 1;
+//         font-size: 2em;
+//       }
+//     }
+//   }
+
+//   p {
+//     position: absolute;
+//     animation: para 2s ease-out;
+//     animation-iteration-count: infinite;
+//   }
+//   @keyframes para {
+//     0%{
+//       opacity: 0;
+//     }
+//     50%{
+//       opacity: 0.5;
+//     }
+//     100%{
+//       opacity: 1;
+//     }
+//   }
+
+//   #p1 {
+//     top: 20%;
+//     right: 50%;
+//   }
+
+//   #p2 {
+//     top: 30%;
+//     right: 35%;
+//   }
+//   #p3 {
+//     top: 45%;
+//     right: 25%;
+//   }
+//   #p4 {
+//     bottom: 25%;
+//     right: 35%;
+//   }
+//   #p5 {
+//     top: 75%;
+//     right: 50%;
+//   }
+//   #p6 {
+//     bottom: 25%;
+//     left: 30%;
+//   }
+//   #p7 {
+//     top: 45%;
+//     left: 25%;
+//   }
+//   #p8 {
+//     top: 30%;
+//     left: 35%;
+//   }
+// }

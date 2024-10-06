@@ -1,0 +1,16 @@
+.loading {
+  background-color: rgba(128, 128, 128, 0.799);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .img {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 100px;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.header {
+  scroll-snap-type: y mandatory;
+    // overflow-y: scroll;
+  .head {
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    background: linear-gradient(rgba(89, 89, 89, 0.7), rgba(89, 89, 89, 0.7)),
+      url(../../assets/bg1.jpg) center;
+    background-size: cover;
+    transition: height 0.5s ease-out, justify-content 2s ease-out,
+      flex-direction 2s ease-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .logo {
+      h2 {
+        margin: 0;
+        color: rgb(255, 145, 0);
+        font-size: 6em;
+        transition: font-size 0.5s ease-out;
+        animation: logo 1.5s ease-out;
+
+        @keyframes logo {
+          0% {
+            font-size: 2em;
+          }
+          50% {
+            font-size: 9em;
+          }
+          100% {
+            font-size: 6em;
+          }
+        }  
+      }
+    }
+    .list {
+
+      display: flex;
+      justify-content: space-evenly;
+      gap: 20px;
+      p {
+        color: rgb(255, 255, 255);
+        font-weight: 400;
+        background-color: rgba(127, 255, 212, 0);
+        padding: 1px 7px;
+        border-radius: 40px;
+      }
+      p:hover {
+        background-color: rgb(255, 145, 0);
+      }
+    }
+  }
+
+  .content{
+       scroll-snap-align: start;
+    background-color: aqua;
+    width: 100%;
+    height: 100vh;
+
+    padding-top: 50vh;
+    
+  }
+}
