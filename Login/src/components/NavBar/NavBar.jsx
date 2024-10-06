@@ -3,10 +3,10 @@ import { IoShirtSharp } from "react-icons/io5";
 import { PiPantsBold } from "react-icons/pi";
 import { PiHoodieBold } from "react-icons/pi";
 import { CiCircleMore } from "react-icons/ci";
-import { Link } from "react-router-dom";
-import Btn from '../../App';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
-function NavBar() {
+function NavBar() { 
     return (
         <div className='navbar'>
 
@@ -32,18 +32,18 @@ function NavBar() {
                             <li><a href="#"><i class="bi bi-info-circle" /> Help </a></li>
                         </ul>
                         <ul className="threeUl">
-                            <button className="circle01" onClick={Btn(2)}></button >
+                            <Link to={"/Home"}><button className="circle01" ></button ></Link> 
                             <Link to={"/b&w"}><button className="circle02"></button ></Link>
                             <Link to={"/Rainbow"}><button className="circle03"></button ></Link>
                         </ul>
                         <ul className="fourUl">
-                            <li id='Search' onM>
+                            <li id='Search' >
                                 <input type="text" placeholder="Search......." />
                                 <button className="btn01" value="button"><i class="bi bi-search" /></button>
                             </li>
                         </ul>
                         <ul className="fiveUl">
-                            <li className="btnli" ><Link to={"/LogIn"}><button value="button"> Log In </button></Link></li>
+                            <li className="btnli" ><Link to={"/"}><button value="button"> Log In </button></Link></li>
                             <li className="btnli" ><Link to={"/SignIn"}><button value="button"> Sign Up </button></Link></li>
                         </ul>
                     </div>

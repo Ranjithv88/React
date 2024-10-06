@@ -21,6 +21,18 @@ input[type="number"]::-webkit-inner-spin-button {
     --input-Font: 3vh;
 }
 
+/*======== Animation Propertics ========*/
+@keyframes anime1 {
+    0% {
+        transform: translateX(-100%);
+        scale: (0);
+    }
+    100% {
+        scale: (1);
+        transform: translateX(0%);
+    }
+}
+
 /*======== Register Page ========*/
 .register {
     height: 100vh;
@@ -30,6 +42,7 @@ input[type="number"]::-webkit-inner-spin-button {
     justify-content: center;
 
     form {
+        animation: anime1 1s ease-in-out 0s 1;
         height: fit-content;
         width: 50vw;
         display: grid;
